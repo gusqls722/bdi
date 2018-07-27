@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Array Test</title>
+</head>
+<body>
+
+<script>
+	var arr = new Array();
+	arr.push("1");
+	arr.push("2");
+	
+	arr = ["1","2","3"]; 
+	arr.shift();		// 첫번쨰꺼를 삭제하고 방 갯수를 앞으로 땡김
+	arr.unshift('1');	// 첫번째자리에 끼워 넣음
+	arr.pop();			// 마지막꺼를 삭제함
+	arr.push('3');		// 다시 넣음
+	arr.splice(1,2);		// 원하는 방부터 원하는 갯수만큼 지워준다.
+	for(var i=0;i<arr.length;i++){
+		document.write(arr[i]+'<br>');
+	}
+</script>
+</body>
+</html>

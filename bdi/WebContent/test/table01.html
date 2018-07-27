@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="rDiv"></div>
+	
+	<script>
+		var tableNum= '<table border="1px">';
+		for(var i=0; i<3;i++){
+			tableNum += '<tr>';
+			for(var j=i*3+1; j<=(i*3)+3; j++){
+				tableNum += '<td>'+ j + '</td>';
+			}
+			tableNum += '</tr>';
+		}
+		rDiv.innerHTML = tableNum;
+	</script>
+</body>
+</html>
