@@ -12,7 +12,7 @@ String[] names = request.getParameterValues("name");
 for(int i=0;i<names.length;i++){
 	
 %>
-	<%= (i+1)+"번째"%> : <%=names[i] %><br>
+	<%= (i+1)+"번째" %> : <%=names[i] %><br>
 <%
 }
 %>
